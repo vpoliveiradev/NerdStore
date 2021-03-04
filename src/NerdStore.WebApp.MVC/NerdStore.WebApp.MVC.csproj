@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <UserSecretsId>aspnet-NerdStore.WebApp.MVC-4F8AFE28-C3DE-471A-8270-BA8681DF2384</UserSecretsId>
+    <AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel>
+    <AspNetCoreModuleName>AspNetCoreModule</AspNetCoreModuleName>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.1.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\EventSourcing\EventSourcing.csproj" />
+    <ProjectReference Include="..\NerdStore.Catalogo.Application\NerdStore.Catalogo.Application.csproj" />
+    <ProjectReference Include="..\NerdStore.Catalogo.Data\NerdStore.Catalogo.Data.csproj" />
+    <ProjectReference Include="..\NerdStore.Catalogo.Domain\NerdStore.Catalogo.Domain.csproj" />
+    <ProjectReference Include="..\NerdStore.Core\NerdStore.Core.csproj" />
+    <ProjectReference Include="..\NerdStore.Pagamentos.AntiCorruption\NerdStore.Pagamentos.AntiCorruption.csproj" />
+    <ProjectReference Include="..\NerdStore.Pagamentos.Data\NerdStore.Pagamentos.Data.csproj" />
+    <ProjectReference Include="..\NerdStore.Vendas.Application\NerdStore.Vendas.Application.csproj" />
+    <ProjectReference Include="..\NerdStore.Vendas.Data\NerdStore.Vendas.Data.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\" />
+  </ItemGroup>
+
+</Project>
